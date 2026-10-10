@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Ambient Glow behind nucleus -->
+    <path
+        android:pathData="M 54,42 A 12,12 0 1,0 54,66 A 12,12 0 1,0 54,42 Z"
+        android:fillColor="#4D8A2BE2" />
+    <path
+        android:pathData="M 54,45 A 9,9 0 1,0 54,63 A 9,9 0 1,0 54,45 Z"
+        android:fillColor="#66E6195E" />
+
+    <!-- Orbital Ring 1 rotated +38 degrees -->
+    <group
+        android:pivotX="54"
+        android:pivotY="54"
+        android:rotation="38">
+        <!-- Glow under ring -->
+        <path
+            android:pathData="M 28,54 a 26,11 0 1,0 52,0 a 26,11 0 1,0 -52,0"
+            android:strokeWidth="5"
+            android:strokeColor="#338A2BE2"
+            android:fillColor="#00000000" />
+        <!-- Main Ring -->
+        <path
+            android:pathData="M 28,54 a 26,11 0 1,0 52,0 a 26,11 0 1,0 -52,0"
+            android:strokeWidth="2.5"
+            android:fillColor="#00000000">
+            <aapt:attr name="android:strokeColor">
+                <gradient
+                    android:startX="28"
+                    android:startY="43"
+                    android:endX="80"
+                    android:endY="65"
+                    android:type="linear">
+                    <item android:offset="0.0" android:color="#9D4EDD" />
+                    <item android:offset="0.5" android:color="#E01E5A" />
+                    <item android:offset="1.0" android:color="#FF3366" />
+                </gradient>
+            </aapt:attr>
+        </path>
+        <!-- Orbital Node / Energy particle -->
+        <path
+            android:pathData="M 78,54 a 2.5,2.5 0 1,0 5,0 a 2.5,2.5 0 1,0 -5,0"
+            android:fillColor="#FFA8BA" />
+    </group>
+
+    <!-- Orbital Ring 2 rotated -38 degrees -->
+    <group
+        android:pivotX="54"
+        android:pivotY="54"
+        android:rotation="-38">
+        <!-- Glow under ring -->
+        <path
+            android:pathData="M 28,54 a 26,11 0 1,0 52,0 a 26,11 0 1,0 -52,0"
+            android:strokeWidth="5"
+            android:strokeColor="#33E01E5A"
+            android:fillColor="#00000000" />
+        <!-- Main Ring -->
+        <path
+            android:pathData="M 28,54 a 26,11 0 1,0 52,0 a 26,11 0 1,0 -52,0"
+            android:strokeWidth="2.5"
+            android:fillColor="#00000000">
+            <aapt:attr name="android:strokeColor">
+                <gradient
+                    android:startX="28"
+                    android:startY="65"
+                    android:endX="80"
+                    android:endY="43"
+                    android:type="linear">
+                    <item android:offset="0.0" android:color="#FF3366" />
+                    <item android:offset="0.5" android:color="#E01E5A" />
+                    <item android:offset="1.0" android:color="#7B2CBF" />
+                </gradient>
+            </aapt:attr>
+        </path>
+        <!-- Orbital Node / Energy particle -->
+        <path
+            android:pathData="M 26,54 a 2.5,2.5 0 1,0 5,0 a 2.5,2.5 0 1,0 -5,0"
+            android:fillColor="#E0AAFF" />
+    </group>
+
+    <!-- Central glowing nucleus -->
+    <path
+        android:pathData="M 54,48.5 A 5.5,5.5 0 1,0 54,59.5 A 5.5,5.5 0 1,0 54,48.5 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="51"
+                android:startY="51"
+                android:endX="57"
+                android:endY="57"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#FF6B8B" />
+                <item android:offset="0.6" android:color="#E01E5A" />
+                <item android:offset="1.0" android:color="#6A0572" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <!-- Hot center core -->
+    <path
+        android:pathData="M 54,51.8 A 2.2,2.2 0 1,0 54,56.2 A 2.2,2.2 0 1,0 54,51.8 Z"
+        android:fillColor="#FFFFFF" />
+
+</vector>

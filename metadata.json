@@ -1,0 +1,6 @@
+{
+  "name": "Ronova AI",
+  "description": "Local-first AI client with unified provider adapter system, supporting OpenAI-compatible and Local Cloud endpoints.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
